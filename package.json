@@ -4,7 +4,7 @@
   "description": "A raw reactjs project without any of the boilerplate from create react app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/xyzst/raw-reactjs#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
   }
 }
