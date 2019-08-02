@@ -1,0 +1,20 @@
+{
+  "name": "raw-react",
+  "version": "1.0.0",
+  "description": "A raw reactjs project without any of the boilerplate from create react app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyzst/raw-reactjs.git"
+  },
+  "author": "Darren Rambaud",
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/xyzst/raw-reactjs/issues"
+  },
+  "homepage": "https://github.com/xyzst/raw-reactjs#readme"
+}
