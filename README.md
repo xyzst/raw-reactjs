@@ -1,4 +1,4 @@
 # A React.js Story
-## by Darren Rambaud
+##### by Darren Rambaud
 
 ...
