@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack')
 
 module.exports = {
-  entry: "./src/index.js", // where the application starts and bundle files
+  entry: ['react-hot-loader/patch','./src/index.js'], // where the application starts and bundle files
   mode: "development", // can be changed with the mode flag
   module: { // see: https://webpack.js.org/configuration/module#module-rules
     rules: [
@@ -18,7 +18,12 @@ module.exports = {
       }
     ]
   },
-  resolve: {extensions: ["*", ".js", ".jsx"]}, // which extensions should webpack resolve? (adds module import without the need to add extensions)
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    },
+    extensions: ["*", ".js", ".jsx"] // which extensions should webpack resolve? (adds module import without the need to add extensions)
+  },
   output: { // where should the bundled code be placed?
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
